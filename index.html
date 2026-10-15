@@ -1,1 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>NEXORA — Define Your Style</title>
+
+    <meta name="description"
+          content="Discover contemporary streetwear and modern fashion at NEXORA.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Announcement -->
+    <div class="announcement">
+        NEW COLLECTION 2026 — EXPRESS YOURSELF.
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#collection">Shop</a>
+            <a href="#new-arrivals">New In</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#home" class="logo">NEXORA<span>.</span></a>
+
+        <div class="nav-actions">
+            <button id="searchToggle" aria-label="Search products">⌕</button>
+
+            <button class="cart-button" id="cartButton">
+                ♧ <span id="cartCount">0</span>
+            </button>
+        </div>
+
+    </header>
+
+    <!-- Search -->
+    <div class="search-box" id="searchBox">
+        <input type="search"
+               id="searchInput"
+               placeholder="Search your style..."
+               aria-label="Search products">
+
+        <button id="searchClose" aria-label="Close search">✕</button>
+    </div>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+
+            <div class="hero-heading">
+                <h1>
+                    DEFINE YOUR<br>
+                    <span>STYLE.</span>
+                </h1>
+
+                <p class="hero-right">
+                    OWN YOUR<br>
+                    <span>WORLD.</span>
+                </p>
+            </div>
+
+            <div class="hero-card">
+
+                <div class="hero-copy">
+
+                    <span class="eyebrow">✦ THE NEW COLLECTION</span>
+
+                    <h2>
+                        Where Comfort<br>
+                        Meets Confidence.
+                    </h2>
+
+                    <p>
+                        Elevate your everyday look with pieces
+                        that speak your personality.
+                    </p>
+
+                    <a href="#collection" class="button button-dark">
+                        Explore Collection <span>↗</span>
+                    </a>
+
+                    <div class="social-proof">
+                        <div class="avatar-stack">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80"
+                                 alt="Customer">
+
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80"
+                                 alt="Customer">
+
+                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=80&q=80"
+                                 alt="Customer">
+                        </div>
+
+                        <span>Made for your individuality.</span>
+                    </div>
+
+                </div>
+
+                <div class="hero-visual">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <img class="hero-model"
+                         src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85"
+                         alt="Contemporary streetwear fashion">
+
+                    <div class="floating-label label-top">
+                        YOUR STYLE. YOUR RULES.
+                    </div>
+
+                    <div class="floating-label label-bottom">
+                        NEW ERA OF STREETWEAR ✦
+                    </div>
+
+                </div>
+
+                <div class="hero-side-note">
+                    PREMIUM QUALITY<br>
+                    CONSCIOUS STYLE<br>
+                    LIMITED EDITIONS
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Brand values -->
+        <section class="benefits">
+
+            <div>
+                <span>✦</span>
+                <p>THOUGHTFUL DESIGN</p>
+            </div>
+
+            <div>
+                <span>◈</span>
+                <p>EVERYDAY COMFORT</p>
+            </div>
+
+            <div>
+                <span>↗</span>
+                <p>EXPRESS YOURSELF</p>
+            </div>
+
+        </section>
+
+        <!-- Products -->
+        <section class="collection section" id="collection">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">CURATED FOR YOU</p>
+                    <h2>Find Your <span>Signature.</span></h2>
+                </div>
+
+                <a href="#new-arrivals" class="text-link">
+                    Discover More ↗
+                </a>
+
+            </div>
+
+            <div class="filter-bar" id="filterBar">
+
+                <button class="filter active" data-filter="all">
+                    All Pieces
+                </button>
+
+                <button class="filter" data-filter="hoodies">
+                    Hoodies
+                </button>
+
+                <button class="filter" data-filter="tees">
+                    T-Shirts
+                </button>
+
+                <button class="filter" data-filter="accessories">
+                    Accessories
+                </button>
+
+            </div>
+
+            <div class="product-grid" id="productGrid">
+
+                <article class="product-card"
+                         data-category="hoodies"
+                         data-name="Purple Essential Hoodie"
+                         data-price="1799">
+
+                    <div class="product-image lavender-bg">
+
+                        <span class="product-tag">BESTSELLER</span>
+
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=650&q=85"
+                             alt="Purple collection inspired hoodie"
+                             loading="lazy">
+
+                        <button class="add-cart">+ Add to Cart</button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Essential Hoodie</h3>
+                            <p>Everyday collection</p>
+                        </div>
+
+                        <strong>₹1,799</strong>
+                    </div>
+
+                </article>
+
+                <article class="product-card"
+                         data-category="tees"
+                         data-name="Classic Oversized Tee"
+                         data-price="999">
+
+                    <div class="product-image pink-bg">
+
+                        <span class="product-tag">NEW IN</span>
+
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=650&q=85"
+                             alt="Classic casual t-shirt"
+                             loading="lazy">
+
+                        <button class="add-cart">+ Add to Cart</button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Oversized Tee</h3>
+                            <p>Relaxed essentials</p>
+                        </div>
+
+                        <strong>₹999</strong>
+                    </div>
+
+                </article>
+
+                <article class="product-card"
+                         data-category="accessories"
+                         data-name="Everyday Crossbody Bag"
+                         data-price="1299">
+
+                    <div class="product-image blue-bg">
+
+                        <span class="product-tag">EDITOR'S PICK</span>
+
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=650&q=85"
+                             alt="Contemporary everyday bag"
+                             loading="lazy">
+
+                        <button class="add-cart">+ Add to Cart</button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Everyday Bag</h3>
+                            <p>Carry your essentials</p>
+                        </div>
+
+                        <strong>₹1,299</strong>
+                    </div>
+
+                </article>
+
+                <article class="product-card"
+                         data-category="hoodies"
+                         data-name="Urban Comfort Hoodie"
+                         data-price="1899">
+
+                    <div class="product-image peach-bg">
+
+                        <img src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=650&q=85"
+                             alt="Modern casual fashion"
+                             loading="lazy">
+
+                        <button class="add-cart">+ Add to Cart</button>
+
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Urban Comfort</h3>
+                            <p>Streetwear essentials</p>
+                        </div>
+
+                        <strong>₹1,899</strong>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="empty-message" id="emptyMessage" hidden>
+                No matching products found. Try another search.
+            </p>
+
+        </section>
+
+        <!-- Brand story -->
+        <section class="story section" id="about">
+
+            <div class="story-visual">
+
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=85"
+                     alt="Fashion and personal style"
+                     loading="lazy">
+
+                <span class="story-sticker">BE YOURSELF ✦</span>
+
+            </div>
+
+            <div class="story-copy">
+
+                <p class="eyebrow">MORE THAN WHAT YOU WEAR</p>
+
+                <h2>
+                    Style is personal.<br>
+                    <span>Make it yours.</span>
+                </h2>
+
+                <p>
+                    NEXORA is a concept fashion brand built around
+                    individuality, comfort and contemporary design.
+                    Your style should reflect who you are, not
+                    what everyone else expects.
+                </p>
+
+                <a href="#collection" class="button button-purple">
+                    Explore the collection ↗
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter" id="new-arrivals">
+
+            <p class="eyebrow">STAY IN THE LOOP</p>
+
+            <h2>A little more <span>NEXORA.</span></h2>
+
+            <p>Discover new drops, fresh ideas and style inspiration.</p>
+
+            <form id="newsletterForm">
+
+                <label class="visually-hidden" for="newsletterEmail">
+                    Your email address
+                </label>
+
+                <input type="email"
+                       id="newsletterEmail"
+                       placeholder="Enter your email address"
+                       required>
+
+                <button type="submit">Join Us ↗</button>
+
+            </form>
+
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <a href="#home" class="logo">NEXORA<span>.</span></a>
+
+        <p>Define your style. Own your world.</p>
+
+        <a href="#home">Back to top ↑</a>
+
+        <small>
+            © 2026 NEXORA. Student portfolio demonstration project.
+        </small>
+
+    </footer>
+
+    <!-- Cart dialog -->
+    <dialog id="cartDialog" class="cart-dialog">
+
+        <div class="dialog-heading">
+            <h2>Your Bag</h2>
+
+            <button id="cartClose" aria-label="Close cart">✕</button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">₹0</strong>
+        </div>
+
+        <p class="cart-note">
+            Demo cart only. No real purchases or payments are processed.
+        </p>
+
+    </dialog>
+
+    <script src="script.js"></script>
+
+</body>
+  </html>
